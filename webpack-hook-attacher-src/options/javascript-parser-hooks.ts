@@ -113,217 +113,248 @@ export class JavascriptParserHookInitializer {
         container.evaluateTypeof = new JavascriptParserHook(
             JavascriptParserHookNames.i.evaluateTypeof,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.evaluate = new JavascriptParserHook(
             JavascriptParserHookNames.i.evaluate,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.evaluateIdentifier = new JavascriptParserHook(
             JavascriptParserHookNames.i.evaluateIdentifier,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , false);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            false
+        );
 
 
         container.evaluateDefinedIdentifier = new JavascriptParserHook(
             JavascriptParserHookNames.i.evaluateDefinedIdentifier,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , false);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            false
+        );
 
 
         container.evaluateCallExpressionMember = new JavascriptParserHook(
             JavascriptParserHookNames.i.evaluateCallExpressionMember,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION, JavascriptParserHookCallbackParameters.PARAM]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION, JavascriptParserHookCallbackParameters.PARAM],
+            true
+        );
 
 
         container.statement = new JavascriptParserHook(
             JavascriptParserHookNames.i.statement,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT],
+            false
+        );
 
 
         container.statementIf = new JavascriptParserHook(
             JavascriptParserHookNames.i.statementIf,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT],
+            false
+        );
 
 
         container.label = new JavascriptParserHook(
             JavascriptParserHookNames.i.label,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT],
+            false
+        );
 
 
         container.import = new JavascriptParserHook(
             JavascriptParserHookNames.i.import,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE],
+            false
+        );
 
 
         container.importSpecifier = new JavascriptParserHook(
             JavascriptParserHookNames.i.importSpecifier,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE, JavascriptParserHookCallbackParameters.EXPORT_NAME, JavascriptParserHookCallbackParameters.IDENTIFIER_NAME]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE, JavascriptParserHookCallbackParameters.EXPORT_NAME, JavascriptParserHookCallbackParameters.IDENTIFIER_NAME],
+            false
+        );
 
 
         container.export = new JavascriptParserHook(
             JavascriptParserHookNames.i.export,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT],
+            false
+        );
 
 
         container.exportImport = new JavascriptParserHook(
             JavascriptParserHookNames.i.exportImport,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE],
+            false
+        );
 
 
         container.exportDeclaration = new JavascriptParserHook(
             JavascriptParserHookNames.i.exportDeclaration,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.DECLARATION]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.DECLARATION],
+            false
+        );
 
 
         container.exportExpression = new JavascriptParserHook(
             JavascriptParserHookNames.i.exportExpression,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.DECLARATION]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.DECLARATION],
+            false
+        );
 
 
         container.exportSpecifier = new JavascriptParserHook(
             JavascriptParserHookNames.i.exportSpecifier,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.IDENTIFIER_NAME, JavascriptParserHookCallbackParameters.EXPORT_NAME, JavascriptParserHookCallbackParameters.INDEX]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.IDENTIFIER_NAME, JavascriptParserHookCallbackParameters.EXPORT_NAME, JavascriptParserHookCallbackParameters.INDEX],
+            false
+        );
 
 
         container.exportImportSpecifier = new JavascriptParserHook(
             JavascriptParserHookNames.i.exportImportSpecifier,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE, JavascriptParserHookCallbackParameters.IDENTIFIER_NAME, JavascriptParserHookCallbackParameters.EXPORT_NAME, JavascriptParserHookCallbackParameters.INDEX]
-            , false);
+            [JavascriptParserHookCallbackParameters.STATEMENT, JavascriptParserHookCallbackParameters.SOURCE, JavascriptParserHookCallbackParameters.IDENTIFIER_NAME, JavascriptParserHookCallbackParameters.EXPORT_NAME, JavascriptParserHookCallbackParameters.INDEX],
+            false
+        );
 
 
         container.varDeclaration = new JavascriptParserHook(
             JavascriptParserHookNames.i.varDeclaration,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.DECLARATION]
-            , false);
+            [JavascriptParserHookCallbackParameters.DECLARATION],
+            false
+        );
 
 
         container.varDeclarationLet = new JavascriptParserHook(
             JavascriptParserHookNames.i.varDeclarationLet,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.DECLARATION]
-            , false);
+            [JavascriptParserHookCallbackParameters.DECLARATION],
+            false
+        );
 
 
         container.varDeclarationConst = new JavascriptParserHook(
             JavascriptParserHookNames.i.varDeclarationConst,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.DECLARATION]
-            , false);
+            [JavascriptParserHookCallbackParameters.DECLARATION],
+            false
+        );
 
 
         container.varDeclarationVar = new JavascriptParserHook(
             JavascriptParserHookNames.i.varDeclarationVar,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.DECLARATION]
-            , false);
+            [JavascriptParserHookCallbackParameters.DECLARATION],
+            false
+        );
 
 
         container.canRename = new JavascriptParserHook(
             JavascriptParserHookNames.i.canRename,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.rename = new JavascriptParserHook(
             JavascriptParserHookNames.i.rename,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.assigned = new JavascriptParserHook(
             JavascriptParserHookNames.i.assigned,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.assign = new JavascriptParserHook(
             JavascriptParserHookNames.i.assign,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.typeof = new JavascriptParserHook(
             JavascriptParserHookNames.i.typeof,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , false);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            false
+        );
 
 
         container.call = new JavascriptParserHook(
             JavascriptParserHookNames.i.call,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.callMemberChain = new JavascriptParserHook(
             JavascriptParserHookNames.i.callMemberChain,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION, JavascriptParserHookCallbackParameters.PROPERTIES]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION, JavascriptParserHookCallbackParameters.PROPERTIES],
+            true
+        );
 
 
         container.new = new JavascriptParserHook(
             JavascriptParserHookNames.i.new,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.expression = new JavascriptParserHook(
             JavascriptParserHookNames.i.expression,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , true);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            true
+        );
 
 
         container.expressionConditionalOperator = new JavascriptParserHook(
             JavascriptParserHookNames.i.expressionConditionalOperator,
             WebpackHookType.SyncBailHook,
-            [JavascriptParserHookCallbackParameters.EXPRESSION]
-            , false);
+            [JavascriptParserHookCallbackParameters.EXPRESSION],
+            false
+        );
 
 
         container.program = new JavascriptParserHook(
             JavascriptParserHookNames.i.program,
             WebpackHookType.SyncBailHook,
-            []
-            , false);
+            [],
+            false
+        );
     }
 }
